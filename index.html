@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Servey Form</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title">Full Stack Web Development Course - Survey Form</h1>
+                <p id="description">Please fill this survey form to let us know your feedback</p>
+            </header>
+            <main>
+                <form id="survey-form"action="#">
+                    <fieldset>
+                        <label id="name-label">Name: <span class="required">*</span> <input type="text" name="name" id="name" required placeholder="Enter Your Name"></label>
+                        <label id="email-label">Email: <span class="required">*</span> <input type="email" name="email" id="email" required placeholder="Enter Your Email"></label>
+                        <label id="number-label">Age: <span class="required">*</span> <input type="number" min="18" max="99" name="age" id="number" required placeholder="Enter Your Age"></label>
+                        <label>Role: <span class="required">*</span>
+                            <select id="dropdown">
+                                <option value="">(Select one option)</option>
+                                <option value="1">Developer</option>
+                                <option value="2">Tester</option>
+                                <option value="3">Admin</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Which of the following topics are you now comfortable with, after the course?</legend>
+                        <label><input class="inline" type="checkbox" name="topic" value="html" id="html"> <img src="./images/html5.png" alt="html_logo"> HTML5 </label>
+                        <label><input class="inline" type="checkbox" name="topic" value="css" id="css"> <img src="./images/css3.png" alt="css_logo"> CSS3</label>
+                        <label><input class="inline" type="checkbox" name="topic" value="js" id="js"> <img src="./images/js.png" alt="js_logo"> JavaScript</label>
+                        <label><input class="inline" type="checkbox" name="topic" value="react" id="react"> <img src="./images/react.png" alt="react_logo"> ReactJS</label>
+                        <label><input class="inline" type="checkbox" name="topic" value="node" id="node"> <img src="./images/nodejs.png" alt="nodejs_logo"> NodeJS</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>How much would you rate us?</legend>
+                        <label><input class="inline" type="radio" name="rating" value="3" id="very-satisfied"> Very Satisfied</label>
+                        <label><input class="inline" type="radio" name="rating" value="2" id="satisfied"> Satisfied</label>
+                        <label><input class="inline" type="radio" name="rating" value="1" id="moderate"> Moderate</label>
+                        <label><input class="inline" type="radio" name="rating" value="0" id="not-satisfied"> Not Satisfied</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Any comments or suggestions?</legend>
+                        <label><textarea name="ways-to-improve" rows="3" cols="30"></textarea></label>
+                    </fieldset>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>            
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>
